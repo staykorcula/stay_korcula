@@ -63,13 +63,13 @@ export default function USPGrid({ usps, dictionary, title, subtitle }: USPGridPr
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group w-[calc(50%-12px)] min-w-[calc(50%-12px)] sm:w-[180px] sm:min-w-[180px] flex-shrink-0"
+              className="group w-full min-w-0 sm:w-[180px] sm:min-w-[180px] flex-shrink-0"
             >
-              <div className="h-[160px] flex flex-col items-center justify-center bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 card-hover">
-                <div className={`w-16 h-16 ${item.bgColor} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className={`w-8 h-8 ${item.color}`} />
+              <div className="min-h-[140px] sm:min-h-[160px] flex flex-col items-center justify-center bg-white rounded-2xl p-4 sm:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 card-hover">
+                <div className={`w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 ${item.bgColor} rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <Icon className={`w-6 h-6 sm:w-8 sm:h-8 ${item.color}`} />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2">
+                <h3 className="font-semibold text-gray-900 text-sm sm:text-base break-words line-clamp-3">
                   {dictionary[item.key] || item.key}
                 </h3>
               </div>

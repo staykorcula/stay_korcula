@@ -110,22 +110,23 @@ export default function Contact({ property, locale, dictionary }: ContactProps) 
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
+          className="min-w-0"
         >
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg overflow-hidden">
             <h3 className="text-2xl font-serif font-bold text-gray-900 mb-6">
               {locale === 'hr' ? 'Rezervirajte svoj odmor' : 'Book Your Stay'}
             </h3>
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 min-w-0">
+                <div className="min-w-0">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     {dictionary.form.name}
                   </label>
                   <input
                     type="text"
                     {...register('name')}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[44px]"
+                    className="w-full min-w-0 px-4 py-3 text-base border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[44px]"
                     placeholder={locale === 'hr' ? 'Vaše ime i prezime' : 'Your full name'}
                   />
                   {errors.name && (
@@ -133,14 +134,14 @@ export default function Contact({ property, locale, dictionary }: ContactProps) 
                   )}
                 </div>
 
-                <div>
+                <div className="min-w-0">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     {dictionary.form.email}
                   </label>
                   <input
                     type="email"
                     {...register('email')}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[44px]"
+                    className="w-full min-w-0 px-4 py-3 text-base border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[44px]"
                     placeholder="your@email.com"
                   />
                   {errors.email && (
@@ -149,14 +150,14 @@ export default function Contact({ property, locale, dictionary }: ContactProps) 
                 </div>
               </div>
 
-              <div>
+              <div className="min-w-0">
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   {dictionary.form.phone}
                 </label>
                 <input
                   type="tel"
                   {...register('phone')}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[44px]"
+                  className="w-full min-w-0 px-4 py-3 text-base border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[44px]"
                   placeholder={propertyContact.phone || '+385 95 822 3830'}
                 />
                 {errors.phone && (
@@ -164,29 +165,29 @@ export default function Contact({ property, locale, dictionary }: ContactProps) 
                 )}
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 min-w-0">
+                <div className="min-w-0">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     {dictionary.form.checkIn}
                   </label>
                   <input
                     type="date"
                     {...register('checkIn')}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[44px]"
+                    className="w-full min-w-0 px-4 py-3 text-base border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[44px] [color-scheme:light]"
                   />
                   {errors.checkIn && (
                     <p className="mt-1 text-sm text-red-600">{errors.checkIn.message}</p>
                   )}
                 </div>
 
-                <div>
+                <div className="min-w-0">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     {dictionary.form.checkOut}
                   </label>
                   <input
                     type="date"
                     {...register('checkOut')}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[44px]"
+                    className="w-full min-w-0 px-4 py-3 text-base border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[44px] [color-scheme:light]"
                   />
                   {errors.checkOut && (
                     <p className="mt-1 text-sm text-red-600">{errors.checkOut.message}</p>
@@ -194,13 +195,13 @@ export default function Contact({ property, locale, dictionary }: ContactProps) 
                 </div>
               </div>
 
-              <div>
+              <div className="min-w-0">
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   {dictionary.form.guests}
                 </label>
                 <select
                   {...register('guests', { valueAsNumber: true })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[44px]"
+                  className="w-full min-w-0 px-4 py-3 text-base border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[44px]"
                 >
                   <option value="">{locale === 'hr' ? 'Odaberite broj gostiju' : 'Select number of guests'}</option>
                   {[1, 2, 3, 4, 5, 6, 7, 8].map(num => (
@@ -214,14 +215,14 @@ export default function Contact({ property, locale, dictionary }: ContactProps) 
                 )}
               </div>
 
-              <div>
+              <div className="min-w-0">
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   {dictionary.form.message}
                 </label>
                 <textarea
                   {...register('message')}
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[120px]"
+                  className="w-full min-w-0 px-4 py-3 text-base border border-gray-300 rounded-xl focus:ring-2 focus:ring-coastal-500 focus:border-transparent transition-all duration-200 min-h-[120px]"
                   placeholder={locale === 'hr' ? 'Dodatne napomene ili zahtjevi...' : 'Additional notes or requests...'}
                 />
               </div>
