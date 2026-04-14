@@ -62,8 +62,8 @@ export const holidayHouseKarbuniParadise: BaseProperty = {
     location: {
       subtitle: { hr: 'U uvali Karbuni na otoku Korčuli', en: 'In Karbuni bay on the island of Korčula' },
       fromSplit: {
-        hr: 'Iz Splita: trajekt do Vele Luke ili Korčule, zatim vožnja do Karbuna (~45–60 min od trajekta)',
-        en: 'From Split: ferry to Vela Luka or Korčula town, then drive to Karbuni (~45–60 min from the ferry)',
+        hr: 'Iz Splita: trajekt do Vele Luke ili Korčule, zatim vožnja do Karbuna (~15–20 min od trajekta)',
+        en: 'From Split: ferry to Vela Luka or Korčula town, then drive to Karbuni (~15–20 min from the ferry)',
       },
       fromDubrovnik: {
         hr: 'trajekt Orebić - Korčula, zatim vožnja do Karbuna',
