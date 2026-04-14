@@ -11,6 +11,7 @@ const PROPERTY_OG_IMAGE_MAP: Record<string, string> = {
   'villa-aquamare': PAGE_OG_IMAGES['villa-aquamare'],
   'villa-prigradica-paradise': PAGE_OG_IMAGES['villa-prigradica-paradise'],
   'holiday-house-kata-babina': PAGE_OG_IMAGES['holiday-house-kata-babina'],
+  'holiday-house-karbuni-paradise': PAGE_OG_IMAGES['holiday-house-karbuni-paradise'],
 };
 
 export function generatePropertyMetadata(property: Property, locale: Locale): Metadata {

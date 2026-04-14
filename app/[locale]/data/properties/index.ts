@@ -8,12 +8,14 @@ import type { Locale } from '../../lib/i18n/i18n';
 import { villaAquamare } from './villa-aquamare';
 import { holidayHouseKataBabina } from './holiday-house-kata-babina';
 import { villaPrigradicaParadise } from './villa-prigradica-paradise';
+import { holidayHouseKarbuniParadise } from './holiday-house-karbuni-paradise';
 
 // Import all properties here
 const allProperties: BaseProperty[] = [
   villaAquamare,
   holidayHouseKataBabina,
   villaPrigradicaParadise,
+  holidayHouseKarbuniParadise,
 ];
 
 /**
@@ -56,5 +58,10 @@ export type { BaseProperty as Property };
 export type * from '../types';
 
 // Export individual properties (for direct imports if needed)
-export { villaAquamare, holidayHouseKataBabina, villaPrigradicaParadise };
+export {
+  villaAquamare,
+  holidayHouseKataBabina,
+  villaPrigradicaParadise,
+  holidayHouseKarbuniParadise,
+};
 

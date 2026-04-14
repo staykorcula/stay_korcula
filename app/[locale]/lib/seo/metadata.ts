@@ -143,11 +143,11 @@ export function generateAccommodationsMetadata(locale: Locale): Metadata {
     locale,
     title: isCroatian ? `Smještaj | ${siteConfig.name}` : `Accommodations | ${siteConfig.name}`,
     description: isCroatian
-      ? 'Upoznajte naše smještaje i nas. StayKorčula nudi moderne vile i apartmane uz more na otoku Korčuli — Villa Aquamare, Villa Prigradica Paradise i Holiday House Kata Babina. Rezervirajte direktno po najboljoj cijeni.'
-      : 'Discover our accommodations and who we are. StayKorčula offers modern villas and apartments by the sea on Korčula island — Villa Aquamare, Villa Prigradica Paradise, and Holiday House Kata Babina. Book direct for the best rate.',
+      ? 'Upoznajte naše smještaje i nas. StayKorčula nudi moderne vile i apartmane uz more na otoku Korčuli — Villa Aquamare, Villa Prigradica Paradise, Holiday House Kata Babina i Holiday House Karbuni Paradise. Rezervirajte direktno po najboljoj cijeni.'
+      : 'Discover our accommodations and who we are. StayKorčula offers modern villas and apartments by the sea on Korčula island — Villa Aquamare, Villa Prigradica Paradise, Holiday House Kata Babina, and Holiday House Karbuni Paradise. Book direct for the best rate.',
     keywords: isCroatian
-      ? 'smještaj Korčula, StayKorčula, vila Aquamare, vila Prigradica, Kata Babina, vela luka, apartmani, hrvatska'
-      : 'accommodation Korcula, StayKorcula, Villa Aquamare, Villa Prigradica, Kata Babina, vela luka, apartments, croatia',
+      ? 'smještaj Korčula, StayKorčula, vila Aquamare, vila Prigradica, Kata Babina, Karbuni, vela luka, apartmani, hrvatska'
+      : 'accommodation Korcula, StayKorcula, Villa Aquamare, Villa Prigradica, Kata Babina, Karbuni, vela luka, apartments, croatia',
     path: 'accommodations',
     image: PAGE_OG_IMAGES.accommodations,
     imageAlt: isCroatian

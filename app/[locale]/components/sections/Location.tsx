@@ -155,7 +155,7 @@ export default function Location({ property, locale, dictionary }: LocationProps
                   <div className="flex items-center text-sm text-gray-500">
                     <Clock className="w-4 h-4 mr-2" />
                     <span>
-                      {locale === 'hr' ? 'Trajekt polazi 1-2 puta dnevno' : 'Ferry departs 1-2 times daily'}
+                      {locale === 'hr' ? 'Trajekt polazi svakih sat vremena' : 'Ferry departs every hour'}
                     </span>
                   </div>
                 </div>

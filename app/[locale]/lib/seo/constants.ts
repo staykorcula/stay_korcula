@@ -23,6 +23,7 @@ export const PAGE_OG_IMAGES = {
   'villa-aquamare': '/images/dron.jpg',
   'villa-prigradica-paradise': '/images/PRIGRADICA/prigradica1.jpg',
   'holiday-house-kata-babina': '/images/BABINA/babina20.jpg',
+  'holiday-house-karbuni-paradise': '/images/KARBUNI/Karbuni1.jpeg',
 } as const;
 
 /** Title template - {page} | {site} for consistency */
